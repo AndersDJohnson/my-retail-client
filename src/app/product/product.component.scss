@@ -38,11 +38,13 @@
     border: 1px solid $light-gray;
     .quantity-label {
         color: $gray;
-        padding-top: 7px;
+        align-self: center;
     }
     .quantity-number {
         .btn {
             background: none;
+            padding: 0;
+            margin: 0;
             &[disabled] {
                 .fa {
                     color: lighten($medium-gray, 15%);

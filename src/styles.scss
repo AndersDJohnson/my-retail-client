@@ -7,7 +7,10 @@ $fa-font-path: "~font-awesome/fonts";
 
 html, body {
   font-family: 'Roboto', sans-serif;
-  margin-top: 5rem;
+  margin-top: 1rem;
+  @include media-breakpoint-up(lg) {
+      margin-top: 5rem;
+  }
 }
 h1 {
   font-weight: 300;
