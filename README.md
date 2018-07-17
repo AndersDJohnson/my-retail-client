@@ -33,7 +33,7 @@ Product with _$129.99_ price & both buttons visible [View product #15117729](htt
 Product with _$139.99_ price & only add to cart button visible: [View product #13860428](http://my-retail.smd-test.com/product/13860428)
 
 ## Continuous Delivery Flow
-
+![ci-flow](https://raw.githubusercontent.com/mchristianson/my-retail-client/ci-flow.png)
 1. Developer starts to work on a new feature and will create a feature branch from the `develop` branch.
 1. Developer will continue to push code to branch. CI will build/test/assemble deployable artifacts and make available to deploy to QA environment. 
 1. Continually merge latest from `develop` branch
