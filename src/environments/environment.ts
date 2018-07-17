@@ -4,6 +4,7 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false,
-  apiUrl: "http://localhost:8080/api/v1"
+    production: false,
+    apiUrl: "http://my-retail.us-east-2.elasticbeanstalk.com/api/v1"
+  // apiUrl: "http://localhost:8080/api/v1"
 };
