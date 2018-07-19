@@ -4,6 +4,8 @@ Matt Christianson's Front end Case Study for Target
 # My Retail Angular Store Front
 This Angular storefront was built with Angular 5.
 
+![CircleCI Status](https://circleci.com/gh/mchristianson/my-retail-client.svg?style=shield&circle-token=c51b1cc20c42a4f4c3b854e095c3e8e1ff0180fc)
+
 ##### Clone the repository
 ```
 > git clone git@github.com:mchristianson/my-retail-client.git
