@@ -25,6 +25,9 @@ Browse to:
 
 [http://localhost:4200/product/13860428](http://localhost:4200/product/13860428)
 
+#### Run the unit tests
+`> ng test`
+
 #### Run the functional tests
 `> ng e2e`
 
