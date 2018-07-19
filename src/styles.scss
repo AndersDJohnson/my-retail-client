@@ -6,7 +6,7 @@ $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome";
 
 html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica Neue', 'Roboto', sans-serif;
   margin-top: 1rem;
   @include media-breakpoint-up(lg) {
       margin-top: 5rem;

@@ -20,7 +20,6 @@ export module MyRetail {
         public id: number;
         public title: string;
         public images: Array<string>;
-        public imageCount: number;
         public features: Array<string>;
         public offerPrice: string;
         public purchasingChannelCode: string;
@@ -37,7 +36,6 @@ export module MyRetail {
             });
             result.images.push(images.PrimaryImage[0].image);
 
-            result.imageCount = entry.imageCount;
             result.features = entry.ItemDescription[0].features.map(feature => {
               return feature;
             });

@@ -1,10 +1,10 @@
 <div class="row" *ngIf="product">
   <div class="col-lg-6">
-    <h1>Ninja<sup>&trade;</sup> Professional Blender with Single Serve Blending Cups</h1>
+    <h1>{{ product.title }}</h1>
       <app-image-carousel [imageUrls]="product.images"></app-image-carousel>
   </div>
   <div class="col-lg-6">
-    <div class="price">{{product.offerPrice}}<span>online price</span></div>
+    <div class="price">{{ product.offerPrice }}<span>online price</span></div>
     <div class="special-offers">
       <ul>
         <li><i class="fa fa-tag"></i> spend $50, ship free</li>
@@ -17,7 +17,7 @@
           <div class="quantity-label">quantity:</div>
           <div class="quantity-number">
             <button (click)="decQuantity()" [disabled]="quantity <= 1" class="btn"><i class="fa fa-minus-circle"></i></button>
-            <span>{{quantity}}</span>
+            <span>{{ quantity }}</span>
             <button (click)="incQuantity()" class="btn"><i class="fa fa-plus-circle"></i></button>
           </div>
         </div>
@@ -52,13 +52,9 @@
     <div class="col-lg-6">
         <div class="reviews-overview">
             <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+                <i class="fa fa-star" *ngFor="let i of fiveStars"></i>
+                overall
             </div>
-            <span>overall</span>
             <span>view all 14 reviews</span>
         </div>
         <div class="reviews">
@@ -76,11 +72,7 @@
             <div class="row">
                 <div class="col-6">
                     <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star" *ngFor="let i of fiveStars"></i>
                     </div>
                     <h4>Fantastic Blender</h4>
                     <p>This blender works amazingly, and blends within seconds.  The single serve cups also work really well for smoothies or protein shakes!</p>
@@ -88,11 +80,7 @@
                 </div>
                 <div class="col-6">
                     <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star gray"></i>
-                        <i class="fa fa-star gray"></i>
-                        <i class="fa fa-star gray"></i>
-                        <i class="fa fa-star gray"></i>
+                        <i class="fa fa-star" [ngClass]="i > 0 ? 'gray' : ''" *ngFor="let i of fiveStars"></i>
                     </div>
                     <h4>Very unhappy</h4>
                     <p>Less than 2 months after purchase it completely stopped working. First it wouldn't detect the pitcher when trying to blend a significant amount, a couple weeks later it wouldn't detect the single serve cup.</p>
