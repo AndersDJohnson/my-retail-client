@@ -10,10 +10,8 @@ This Angular storefront was built with Angular 5.
 ```
 > git clone git@github.com:mchristianson/my-retail-client.git
 > cd my-retail-client
+> npm install
 ```
-
-#### Install Angular CLI
-`> npm install -g @angular/cli`
 
 #### Run the app
 
